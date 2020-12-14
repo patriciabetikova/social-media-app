@@ -1,5 +1,5 @@
+import { Card } from "components/Card"
 import {
-  PostWrapper,
   PostHeader,
   ImageWrapper,
   UserName,
@@ -9,7 +9,7 @@ import {
 
 export const Post = ({ text, user, date }) => {
   return (
-    <PostWrapper>
+    <Card>
       <PostHeader>
         <ImageWrapper src={user.img} alt="profile pic" />
         <UserSection>
@@ -23,6 +23,6 @@ export const Post = ({ text, user, date }) => {
         <button>comment</button>
         <button>share</button>
       </div>
-    </PostWrapper>
+    </Card>
   )
 }
